@@ -5,16 +5,14 @@
             <tr>
                 <th class="id" custom-sort order="'id'" sort="sort">Id&nbsp;</th>
                 <th class="name" custom-sort order="'name'" sort="sort">Name&nbsp;</th>
-                <th class="description" custom-sort order="'description'" sort="sort">Description&nbsp;</th>
-                <th class="field3" custom-sort order="'field3'" sort="sort">Field 3&nbsp;</th>
-                <th class="field4" custom-sort order="'field4'" sort="sort">Field 4&nbsp;</th>
-                <th class="field5" custom-sort order="'field5'" sort="sort">Field 5&nbsp;</th>
+                <th class="type" custom-sort order="'type'" sort="sort">Type&nbsp;</th>
+                <th class="status" custom-sort order="'status'" sort="sort">Status&nbsp;</th>
             </tr>
         </thead>
         <tfoot>
             <td colspan="6">
                 <div class="pagination pull-right">
-                    <ul>
+                    <ul class="pagination pagination-sm">
                         <li ng-class="{disabled: currentPage == 0}">
                             <a href ng-click="prevPage()">« Prev</a>
                         </li>
@@ -30,17 +28,18 @@
                 </div>
             </td>
         </tfoot>
+<!--
         <pre>pagedItems.length: {{pagedItems.length|json}}</pre>
         <pre>currentPage: {{currentPage|json}}</pre>
         <pre>currentPage: {{sort|json}}</pre>
+        <pre>{{ pagedItems|json }}</pre>
+-->
         <tbody>
             <tr ng-repeat="item in pagedItems[currentPage] | orderBy:sort.sortingOrder:sort.reverse">
                 <td>{{item.id}}</td>
                 <td>{{item.name}}</td>
-                <td>{{item.description}}</td>
-                <td>{{item.field3}}</td>
-                <td>{{item.field4}}</td>
-                <td>{{item.field5}}</td>
+                <td>{{item.type}}</td>
+                <td>{{item.status}}</td>
             </tr>
         </tbody>
     </table>

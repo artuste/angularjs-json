@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="stipterApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Stipter Admin</title>
+
+    <link href="app/css/bootstrap/css/bootstrap.min-dark.css" rel="stylesheet">
+    <link href="app/css/main.css" rel="stylesheet">
+    <link href="app/css/button.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <span class="logo"><span class="glyphicon glyphicon-fire"></span> Stipter Admin</span>
+        </div>
+
+        <div ng-include="'app/tpl/sidebar.tpl.html'"></div>
+
+        <div id="center">
+            <div class="container">
+                <section ng-view></section>
+            </div>
+        </div>
+    </div>
+
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-local-storage/angular-local-storage.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+
+    <script src="app/app.js"></script>
+    
+    <script src="app/controllers.post.js"></script>
+    <script src="app/controllers.home.js"></script>
+    <script src="app/controllers.splitter.js"></script>
+    <script src="app/modules/products/controllers/controllers.product.js"></script>
+    <script src="app/modules/products/directives/directive.product.js"></script>
+    <script src="app/modules/products/services/factory.mock.product.js"></script>
+    <script src="app/factory.mock.js"></script>
+    <script src="app/service.localPostStorage.js"></script>
+
+</body>
+
+</html>

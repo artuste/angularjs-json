@@ -1,0 +1,34 @@
+Stipter
+-------
+
+- AP: Arrange admin panel source code
+
+Presentation Frontend:
+- HTML5 and CSS3
+-- Admin panel (Metronic): pros and cons, adjustments needed (e.g. maintenance)
+-- Browser support
+-- Coding standards (e.g. naming conventions)
+
+- JavaScript
+-- Package manger: why and what?
+-- Build tool: why and what?
+-- Libraries: why and what? (e.g. AngularJS)
+-- Unit Testing: why and what?
+-- Coding standards (e.g. naming conventions)
+
+- Overall Architecture:
+-- Directories layout
+-- Files namnig conventions
+-- Development environment (e.g. IDE)
+
++ Implementation of certain examples using recommended stack
+
+Possible questions:
+- support for selected technologies (community, commercial)
+- how easy Java developer can develop frontend?
+- prototyping - how fast can we deliver views
+- prototyping without API existing yet
+
+Presentation Backend:
+
+@TODO

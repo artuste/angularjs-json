@@ -4,8 +4,10 @@ var stipterApp = angular.module('stipterApp', [
   'stipterApp.controllers.home',
   'stipterApp.controllers.post',
   'stipterApp.controllers.splitter',
-        'stipterApp.controllers.product',
+  'stipterApp.controllers.product',
+  'stipterApp.directive.product',
   'stipterApp.factory',
+  'stipterApp.factoryProduct',
   'stipterApp.service',
 
   'ngRoute'
@@ -38,7 +40,7 @@ stipterApp.config(function ($routeProvider) {
         controller: 'SplitterCtrl'
     }).
     when('/categories', {
-        templateUrl: 'app/tpl/products/categories.tpl.html',
+        templateUrl: 'app/modules/products/tpl/categories.tpl.html',
         controller: 'CategoryCtrl'
     }).
     otherwise({
