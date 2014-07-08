@@ -1,0 +1,36 @@
+{
+	"config": {
+		"showActionBar": false,
+		"labelType": "info",
+		"showForm": false,
+		"showPhotos": false
+	},
+	"data": {
+		"id": 2,
+		"name": "Ut nec posuere enim",
+		"subname": "Vivamus in facilisis tortor",
+		"desc": "Ut nec posuere enim, consectetur adipiscing elit. Aliquam sed aliquet odio. Aliquam a elit pellentesque, cursus metus in, dapibus neque. Vivamus in facilisis tortor, aliquet adipiscing turpis. Suspendisse blandit turpis convallis mattis faucibus. Morbi ac euismod justo. Aenean ",
+		"list": [
+			{
+				"name": "Lorem 1",
+				"status": 1,
+				"date": 1404163915339
+			},
+			{
+				"name": "Lorem 2",
+				"status": 2,
+				"date": 1404163925339
+			},
+			{
+				"name": "Lorem 3",
+				"status": 3,
+				"date": 1404163935339
+			},
+			{
+				"name": "Lorem 4",
+				"status": 4,
+				"date": 1404163945339
+			}
+		]
+	}
+}

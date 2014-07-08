@@ -1,0 +1,44 @@
+{
+  "name": "Stipter App",
+  "version": "0.1.0",
+  "description": "Stipter Admin panel",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "No",
+    "keywords",
+    "yet"
+  ],
+  "authors": [
+    "AS"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.19",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "angular-route": "~1.2.19",
+    "angular-mocks": "~1.2.19",
+    "angular-resource": "~1.2.19",
+    "angular-local-storage": "~0.0.5",
+    "angular-ui-router": "~0.2.10"
+  },
+  "devDependencies": {
+    "angular": "~1.2.19",
+    "jquery": "~2.1.1",
+    "angular-mocks": "~1.2.19",
+    "angular-route": "~1.2.19",
+    "angular-latest": "~1.2.19",
+    "angular-resource": "~1.2.19"
+  }
+}

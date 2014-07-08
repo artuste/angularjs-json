@@ -1,0 +1,16 @@
+<div ng-show="!oneitem" class="alert alert-warning" role="alert">
+	<strong>Ah...</strong> Please choose something from the list.
+</div>
+
+<nav ng-show="config.showActionBar" class="pull-right">
+	<button class="btn btn-sm btn-success"><span class="glyphicon glyphicon-leaf"></span> Edit</button>
+	<button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-tasks"></span>
+		Remove
+	</button>
+</nav>
+
+<span ng-show="config.labelType" class="label label-{{config.labelType}}">{{oneitem.subname}}</span>
+
+<h2>{{oneitem.name}}</h2>
+
+<p>{{oneitem.desc}}</p>

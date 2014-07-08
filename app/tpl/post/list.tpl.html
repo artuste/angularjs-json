@@ -1,0 +1,48 @@
+<div class="row">
+
+	<div class="col-xs-12 action-top-bar">
+		<button ng-click="create()" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-leaf"></span> New</button>
+		<button ng-click="populate()" type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-tasks"></span> Populate</button>
+	</div>
+
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+
+			<div class="panel-heading">
+				<h3 class="panel-title">Posts <span class="badge bg-info pull-right">{{posts.length}}</span></h3>
+			</div>
+
+			<div class="panel-body">
+
+				<table class="table table-striped">
+					<thead>
+					<tr>
+						<th>#</th>
+						<th width="70%">Name</th>
+						<th></th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr ng-repeat="post in posts">
+						<td>{{ post.id }}</td>
+						<td>
+							<span ng-show="post.dirty" class="glyphicon glyphicon-asterisk text-danger"></span>
+							{{ post.name }}</td>
+						<td>
+							<div class="btn-group">
+								<button ng-click="edit(post.id)" type="button" class="btn btn-xs btn-success">
+									<span class="glyphicon glyphicon-pencil"></span> edit
+								</button>
+								<button ng-click="delete(post.id)" type="button" class="btn btn-xs btn-default">
+									<span class="glyphicon glyphicon-trash"></span> delete
+								</button>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</div>

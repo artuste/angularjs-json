@@ -1,0 +1,77 @@
+.btn-success.active {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-success {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #b73131;
+	/*background-image: -moz-linear-gradient(top, #c73535, #9f2a2a);*/
+	/*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c73535), to(#9f2a2a));*/
+	/*background-image: -webkit-linear-gradient(top, #c73535, #9f2a2a);*/
+	/*background-image: -o-linear-gradient(top, #c73535, #9f2a2a);*/
+	/*background-image: linear-gradient(to bottom, #c73535, #9f2a2a);*/
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc73535', endColorstr='#ff9f2a2a', GradientType=0);
+	border-color: #9f2a2a #9f2a2a #621a1a;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #9f2a2a;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+	color: #ffffff;
+	background-color: #9f2a2a;
+	*background-color: #8b2525;
+}
+
+.btn-success:active,
+.btn-success.active {
+	background-color: #762020;
+}
+
+.btn-default.active {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-default {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #5b7f7f;
+	/*background-image: -moz-linear-gradient(top, #638b8b, #4e6d6d);*/
+	/*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#638b8b), to(#4e6d6d));*/
+	/*background-image: -webkit-linear-gradient(top, #638b8b, #4e6d6d);*/
+	/*background-image: -o-linear-gradient(top, #638b8b, #4e6d6d);*/
+	/*background-image: linear-gradient(to bottom, #638b8b, #4e6d6d);*/
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff638b8b', endColorstr='#ff4e6d6d', GradientType=0);
+	border-color: #4e6d6d #4e6d6d #2e4141;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #4e6d6d;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.btn-default.disabled,
+.btn-default[disabled] {
+	color: #ffffff;
+	background-color: #4e6d6d;
+	*background-color: #435e5e;
+}
+
+.btn-default:active,
+.btn-default.active {
+	background-color: #394f4f;
+}
