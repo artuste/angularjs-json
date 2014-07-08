@@ -7,6 +7,12 @@ app.controller('CategoryCtrl', function ($scope, $location) {
     };
 });
 
+
+app.controller('AboutCtrl', function ($scope) {
+    $scope.content = 'Some desc about this project ...';
+});
+
+
 app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
 
     // init

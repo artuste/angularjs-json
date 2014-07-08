@@ -18,9 +18,9 @@ module.exports = function(config) {
         'bower_components/angular/angular.js',
         'bower_components/angular-mocks/angular-mocks.js',
         'bower_components/angular-resource/angular-resource.js',
-        'scripts/app.js',
-        'scripts/controllers/controllers.js',
-        'tests/itemsCtrlSpec.js'
+        'app/app.js',
+        'app/modules/products/*/*.js',
+        'app/tests/test1.js'
     ],
       
     plugins : [

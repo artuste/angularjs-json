@@ -1,7 +1,17 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
+        karma: {
+//            unit: {
+//                configFile: 'karma.conf.js',
+//            },
+            //continuous integration mode: run tests once in PhantomJS browser.
+            continuous: {
+                configFile: 'karma.conf.js',
+                singleRun: true,
+                browsers: ['PhantomJS']
+            },
+        },
         wiredep: {
             target: {
 
