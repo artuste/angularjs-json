@@ -5,129 +5,171 @@ app.service('ProductCategoryTable', function () {
         return [
   {
     "id": 0,
-    "name": "Higgins Graham",
-    "type": "et",
-    "status": "male"
+    "name": "Noel Macias",
+    "type": "sint",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 1,
-    "name": "Morse Schultz",
-    "type": "voluptate",
-    "status": "male"
+    "name": "Vang Sherman",
+    "type": "deserunt",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 2,
-    "name": "Ochoa Cooper",
-    "type": "esse",
-    "status": "male"
+    "name": "Sherrie Mccullough",
+    "type": "adipisicing",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 3,
-    "name": "Samantha Stanton",
-    "type": "adipisicing",
-    "status": "female"
+    "name": "Morales Murray",
+    "type": "anim",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 4,
-    "name": "Smith Valencia",
-    "type": "ut",
-    "status": "male"
+    "name": "Holly Adkins",
+    "type": "consectetur",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 5,
-    "name": "Florence Fulton",
-    "type": "voluptate",
-    "status": "female"
+    "name": "Pam Hogan",
+    "type": "exercitation",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 6,
-    "name": "Concepcion Hoffman",
-    "type": "cillum",
-    "status": "female"
+    "name": "Lyons Harvey",
+    "type": "duis",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 7,
-    "name": "Fay Velazquez",
-    "type": "consectetur",
-    "status": "female"
+    "name": "Augusta Ferrell",
+    "type": "non",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 8,
-    "name": "Walsh Medina",
-    "type": "tempor",
-    "status": "male"
+    "name": "Eugenia Stevens",
+    "type": "aliquip",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 9,
-    "name": "Phoebe Maynard",
-    "type": "et",
-    "status": "female"
+    "name": "Lewis Booth",
+    "type": "consequat",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 10,
-    "name": "Tami Talley",
-    "type": "laborum",
-    "status": "female"
+    "name": "Suzanne Alvarado",
+    "type": "aliquip",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 11,
-    "name": "Ericka Randall",
-    "type": "mollit",
-    "status": "female"
+    "name": "Polly Simon",
+    "type": "in",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 12,
-    "name": "Nadia Ballard",
-    "type": "nulla",
-    "status": "female"
+    "name": "Barber Steele",
+    "type": "ad",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 13,
-    "name": "Hilary Contreras",
-    "type": "nostrud",
-    "status": "female"
+    "name": "Kaitlin Franklin",
+    "type": "aliqua",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 14,
-    "name": "Zamora Cook",
-    "type": "veniam",
-    "status": "male"
+    "name": "Sue Oliver",
+    "type": "consectetur",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 15,
-    "name": "Klein Watkins",
-    "type": "esse",
-    "status": "male"
+    "name": "Mitchell Juarez",
+    "type": "culpa",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 16,
-    "name": "Pauline Malone",
-    "type": "fugiat",
-    "status": "female"
+    "name": "Fay Vinson",
+    "type": "cillum",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 17,
-    "name": "Dawn Macdonald",
-    "type": "consequat",
-    "status": "female"
+    "name": "Clemons Maynard",
+    "type": "esse",
+    "status": "male",
+    "selected": false
   },
   {
     "id": 18,
-    "name": "Kaitlin Macias",
-    "type": "in",
-    "status": "female"
+    "name": "Leanna Dunn",
+    "type": "reprehenderit",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 19,
-    "name": "Moses Wynn",
-    "type": "aute",
-    "status": "male"
+    "name": "Lynda Burton",
+    "type": "est",
+    "status": "female",
+    "selected": false
   },
   {
     "id": 20,
-    "name": "Goodman Mccray",
-    "type": "ex",
-    "status": "male"
+    "name": "Erna Silva",
+    "type": "minim",
+    "status": "female",
+    "selected": false
+  },
+  {
+    "id": 21,
+    "name": "Beth Bates",
+    "type": "duis",
+    "status": "female",
+    "selected": false
+  },
+  {
+    "id": 22,
+    "name": "Minerva Donovan",
+    "type": "enim",
+    "status": "female",
+    "selected": false
+  },
+  {
+    "id": 23,
+    "name": "Ethel Knox",
+    "type": "irure",
+    "status": "female",
+    "selected": false
   }
 ]
     };

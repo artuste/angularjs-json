@@ -76,3 +76,23 @@ body {
 	color: #fff;
 	background-color: #BFBFBF;
 }
+
+
+/*************************************************/
+/* Bootstrap Twitter overrides */
+.btn-group button {
+    margin: 0 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr20 input {
+    position: absolute !important;
+    top: -2px;    
+}
+
+.mr20 span {
+    margin-left: 16px;
+}

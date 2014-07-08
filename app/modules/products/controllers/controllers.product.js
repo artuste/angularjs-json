@@ -24,6 +24,23 @@ app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
     $scope.currentPage = 0;
     $scope.items = ProductCategoryTable.all();
 
+    $scope.selectItem = function (index) {
+        var itemChecked = $scope.items[index].selected;
+
+        if (itemChecked == true) {
+            $scope.items[index].selected = false;
+        } else {
+            $scope.items[index].selected = true;
+        }
+    };
+//    $scope.selectItemAll = function () {
+//        var l = $scope.items.length;
+//        for (var i = 0; i < l; i++) {
+//            $scope.items[i].selected = true;
+//        }
+//debugger;
+//    };
+
     var searchMatch = function (haystack, needle) {
         if (!needle) {
             return true;
@@ -65,7 +82,7 @@ app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
 
     $scope.range = function (size, start, end) {
         var ret = [];
-        console.log(size, start, end);
+        //        console.log(size, start, end);
 
         if (size < end) {
             end = size;
