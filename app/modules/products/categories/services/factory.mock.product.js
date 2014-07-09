@@ -1,0 +1,176 @@
+var services = angular.module('stipterApp.factoryProduct', []);
+
+app.service('ProductCategoryTable', function () {
+    this.all = function () {
+        return [
+              {
+                "id": 0,
+                "name": "Noel Macias",
+                "type": "sint",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 1,
+                "name": "Vang Sherman",
+                "type": "deserunt",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 2,
+                "name": "Sherrie Mccullough",
+                "type": "adipisicing",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 3,
+                "name": "Morales Murray",
+                "type": "anim",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 4,
+                "name": "Holly Adkins",
+                "type": "consectetur",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 5,
+                "name": "Pam Hogan",
+                "type": "exercitation",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 6,
+                "name": "Lyons Harvey",
+                "type": "duis",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 7,
+                "name": "Augusta Ferrell",
+                "type": "non",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 8,
+                "name": "Eugenia Stevens",
+                "type": "aliquip",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 9,
+                "name": "Lewis Booth",
+                "type": "consequat",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 10,
+                "name": "Suzanne Alvarado",
+                "type": "aliquip",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 11,
+                "name": "Polly Simon",
+                "type": "in",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 12,
+                "name": "Barber Steele",
+                "type": "ad",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 13,
+                "name": "Kaitlin Franklin",
+                "type": "aliqua",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 14,
+                "name": "Sue Oliver",
+                "type": "consectetur",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 15,
+                "name": "Mitchell Juarez",
+                "type": "culpa",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 16,
+                "name": "Fay Vinson",
+                "type": "cillum",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 17,
+                "name": "Clemons Maynard",
+                "type": "esse",
+                "status": "male",
+                "selected": false
+              },
+              {
+                "id": 18,
+                "name": "Leanna Dunn",
+                "type": "reprehenderit",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 19,
+                "name": "Lynda Burton",
+                "type": "est",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 20,
+                "name": "Erna Silva",
+                "type": "minim",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 21,
+                "name": "Beth Bates",
+                "type": "duis",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 22,
+                "name": "Minerva Donovan",
+                "type": "enim",
+                "status": "female",
+                "selected": false
+              },
+              {
+                "id": 23,
+                "name": "Ethel Knox",
+                "type": "irure",
+                "status": "female",
+                "selected": false
+              }
+            ]
+    };
+});

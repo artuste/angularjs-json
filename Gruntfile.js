@@ -18,8 +18,7 @@ module.exports = function (grunt) {
                 // Point to the files that should be updated when
                 // you run `grunt wiredep`
                 src: [
-              'index.html',
-              'app/tpl/**/*.html'
+              'index.html'
             ],
                 // Optional:
                 // ---------
@@ -35,24 +34,24 @@ module.exports = function (grunt) {
     });
 
     // Npm tasks
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-ngmin');
-
-    grunt.loadNpmTasks('grunt-contrib-jasmine');
-    grunt.loadNpmTasks('grunt-contrib-qunit');
-
-
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-htmlhint');
-
-    // My tasks
-    grunt.registerTask('default', ['jshint', 'less', 'cssmin', 'jasmine']);
-    grunt.registerTask('less-css', ['less', 'cssmin']);
-    grunt.registerTask('test', ['qunit', 'jasmine']);
+//    grunt.loadNpmTasks('grunt-contrib-jshint');
+//    grunt.loadNpmTasks('grunt-contrib-uglify');
+//    grunt.loadNpmTasks('grunt-contrib-less');
+//    grunt.loadNpmTasks('grunt-contrib-cssmin');
+//    grunt.loadNpmTasks('grunt-ngmin');
+//
+//    grunt.loadNpmTasks('grunt-contrib-jasmine');
+//    grunt.loadNpmTasks('grunt-contrib-qunit');
+//
+//
+//    grunt.loadNpmTasks('grunt-contrib-concat');
+//    grunt.loadNpmTasks('grunt-contrib-watch');
+//    grunt.loadNpmTasks('grunt-htmlhint');
+//
+//    // My tasks
+//    grunt.registerTask('default', ['jshint', 'less', 'cssmin', 'jasmine']);
+//    grunt.registerTask('less-css', ['less', 'cssmin']);
+//    grunt.registerTask('test', ['qunit', 'jasmine']);
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-wiredep');
 

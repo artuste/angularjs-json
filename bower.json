@@ -31,7 +31,9 @@
     "angular-mocks": "~1.2.19",
     "angular-resource": "~1.2.19",
     "angular-local-storage": "~0.0.5",
-    "angular-ui-router": "~0.2.10"
+    "angular-ui-router": "~0.2.10",
+    "bootstrap-switch": "~3.0.2",
+    "jquery-ui": "~1.11.0"
   },
   "devDependencies": {
     "angular": "~1.2.19",
