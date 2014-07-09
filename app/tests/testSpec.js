@@ -1,15 +1,14 @@
 'use strict';
  
-describe('Controller: AboutCtrl', function () {
- 
+describe('Controller: TestCtrl', function () {
     beforeEach(module('stipterApp.controllers.product'));
  
-    var AboutCtrl,
+    var TestCtrl,
         scope;
  
     beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
-        AboutCtrl = $controller('AboutCtrl', {
+        TestCtrl = $controller('TestCtrl', {
             $scope: scope
         });
     }));

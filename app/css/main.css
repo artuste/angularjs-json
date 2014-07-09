@@ -95,6 +95,10 @@ body {
     margin-right: 20px;
 }
 
+.mr20 label {
+    position: relative;
+}
+
 .mr20 input {
     position: absolute !important;
     top: -2px;    

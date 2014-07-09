@@ -2,8 +2,8 @@
 
 var app = angular.module('stipterApp.controllers.home', []);
 
-	app.controller('HomeCtrl', function ($scope, $http) {
-        // ...
+	app.controller('HomeCtrl', function ($scope) {
+        this.content = 'Some text';
 	});
 
 	app.controller('MenuCtrl', function ($scope, $location) {

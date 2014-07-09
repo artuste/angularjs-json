@@ -14,7 +14,7 @@ stipterApp.config(function ($routeProvider) {
         controller: 'HomeCtrl'
     }).
     when('/categories', {
-        templateUrl: 'app/modules/products/tpl/categories.tpl.html',
+        templateUrl: 'app/modules/products/categories/tpl/categories.tpl.html',
         controller: 'CategoryCtrl'
     }).
     otherwise({

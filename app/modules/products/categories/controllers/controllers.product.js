@@ -8,7 +8,7 @@ app.controller('CategoryCtrl', function ($scope, $location) {
 });
 
 
-app.controller('AboutCtrl', function ($scope) {
+app.controller('TestCtrl', function ($scope) {
     $scope.content = 'Some desc about this project ...';
 });
 
