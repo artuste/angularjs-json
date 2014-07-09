@@ -1,7 +1,32 @@
-<h1>Categories</h1>
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+        <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
 
-<div class="row-fluid">
-    <div ng-include="'app/modules/products/categories/tpl/categories-breadcrumbs.tpl.html'"></div>
-    <div ng-include="'app/modules/products/categories/tpl/categories-filter.tpl.html'"></div>
-    <div ng-include="'app/modules/products/categories/tpl/categories-table.tpl.html'"></div>
+    </div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content-example-ui">
+            <h3 class="page-title">Categories</h3>
+
+            <ul class="page-breadcrumb breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="#/dashboard">App</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#/categories">Categories</a>
+                    <i class="fa"></i>
+                </li>
+            </ul>
+
+            <div class="row-fluid">
+                <div ng-include="'app/modules/products/categories/tpl/categories-filter.tpl.html'"></div>
+                <div ng-include="'app/modules/products/categories/tpl/categories-table.tpl.html'"></div>
+            </div>
+        </div>
+    </div>
 </div>
