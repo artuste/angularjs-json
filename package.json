@@ -1,5 +1,5 @@
 {
-  "name": "grunt-app",
+  "name": "stipter-app",
   "version": "1.2.3",
   "devDependencies": {
     "grunt": "~0.4.5",
