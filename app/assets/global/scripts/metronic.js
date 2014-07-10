@@ -3,6 +3,13 @@ Core script to handle the entire theme and core functions
 **/
 var Metronic = function () {
 
+    /*
+    
+    Move all config into init e.g. { brandColors: '...', ... }
+    
+    */
+    
+    
     // IE mode
     var isRTL = false;
     var isIE8 = false;
