@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                 configFile: 'karma.conf.js',
                 singleRun: true,
                 browsers: ['PhantomJS'] //'Chrome', 'Firefox'
-            },
+            }
         },
         wiredep: {
             target: {
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 // ---------
                 cwd: '',
                 dependencies: true,
-                devDependencies: false,
+                devDependencies: true,
                 exclude: [],
                 fileTypes: {},
                 ignorePath: '',
@@ -53,4 +53,6 @@ module.exports = function (grunt) {
     //    grunt.registerTask('test', ['qunit', 'jasmine']);
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-wiredep');
+    
+    grunt.registerTask('default', ['grunt-wiredep']);
 };

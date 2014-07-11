@@ -40,7 +40,6 @@
     "jquery": "~2.1.1",
     "angular-mocks": "~1.2.19",
     "angular-route": "~1.2.19",
-    "angular-latest": "~1.2.19",
     "angular-resource": "~1.2.19"
   }
 }

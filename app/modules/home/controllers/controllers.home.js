@@ -7,7 +7,7 @@ var app = angular.module('stipterApp.controllers.home', []);
 	});
 
 	app.controller('MenuCtrl', function ($scope, $location) {
-		$scope.getClass = function (path) {
+		$scope.getPath = function (path) {
 			if ($location.path().substr(0, path.length) == path) {
 				return "active"
 			} else {
