@@ -19,8 +19,7 @@
                 <div>
                      <button ng-click="add()">Add new item</button>
                      <hr />
-                     <select ng-model="idRemove">
-                        <option></option>
+                     <select ng-model="itemId">
                         <option ng-repeat="post in posts">{{ post.id }}</option>
                      </select>
                      <button ng-click="remove()">Remove</button>

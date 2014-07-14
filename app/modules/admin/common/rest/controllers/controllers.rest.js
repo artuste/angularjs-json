@@ -33,14 +33,21 @@ app.controller('PostShow', function ($scope, Post) {
     };
 
     $scope.remove = function () {
-        var idRemove = this.idRemove;
+        var itemId = this.itemId;
 
         var d = {
-            id: idRemove
+            id: itemId,
+            index: -1
         };
 
+        angular.forEach($scope.posts, function (value, key) {
+            if (value.id == itemId) {
+                d.index = key;
+            }
+        });
+
         Post.delete(d, function (data) {
-            debugger;
+            $scope.posts.splice(d.index, 1);
         });
     };
 });

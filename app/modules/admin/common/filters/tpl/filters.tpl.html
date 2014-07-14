@@ -7,13 +7,13 @@
 
             <div ng-controller="FiltersCtrl">
                 <h4>i18n nl date</h4>
-                <div>{{ '2013-03-11' | date }}</div>
+                <pre>{{ '2013-03-11' | date }}</pre>
 
                 <h4>Custom filters</h4>
                 <ul>
                     <li ng-repeat="value in values">{{ value | myfilter:'date' }}</li>
                 </ul>
-                <pre>{{ 'uppercase the text' | myfilter:'uppercase' }}</pre>
+                <pre>{{ 'uppercase example' | myfilter:'uppercase' }}</pre>
             </div>
         </div>
     </div>

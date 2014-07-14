@@ -5,6 +5,7 @@ app.controller('CategoryCtrl', function ($scope, $location) {
     $scope.category = {
         name: 'new category'
     };
+
 });
 
 app.controller('TestCtrl', function ($scope) {

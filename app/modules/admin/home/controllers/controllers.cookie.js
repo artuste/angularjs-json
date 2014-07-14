@@ -28,4 +28,9 @@ app.controller('CookiesCtrl', ['$scope', '$cookieStore', function($scope, $cooki
         
         console.log('cookie removed!');
     };
+    
+    $scope.showContentIfCookie = function (cookieName) {
+       var cookie = $cookieStore.get(cookieName); 
+        debugger;
+    };
   }]);
