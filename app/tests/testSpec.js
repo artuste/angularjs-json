@@ -1,7 +1,7 @@
 'use strict';
  
 describe('Controller: TestCtrl', function () {
-    beforeEach(module('stipterApp.controllers.product'));
+    beforeEach(module('adminApp.controllers.product'));
  
     var TestCtrl,
         scope;

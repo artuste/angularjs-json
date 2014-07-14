@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('stipterApp.controllers.home', []);
+var app = angular.module('adminApp.controllers.home', []);
 
 	app.controller('HomeCtrl', function ($scope) {
         this.content = 'Some text';

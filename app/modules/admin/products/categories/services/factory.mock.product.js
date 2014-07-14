@@ -1,4 +1,4 @@
-var services = angular.module('stipterApp.factoryProduct', []);
+var services = angular.module('adminApp.factoryProduct', []);
 
 app.service('ProductCategoryTable', function () {
     this.all = function () {

@@ -12,6 +12,17 @@ module.exports = function (grunt) {
                 browsers: ['PhantomJS'] //'Chrome', 'Firefox'
             }
         },
+        sass: { 
+            dist: { // Target
+                options: { // Target options
+                    style: 'expanded'
+                },
+                files: { // Dictionary of files
+                    'sass/global/components.css': 'sass/global/components.scss', // 'destination': 'source'
+                    'sass/global/plugins.css': 'sass/global/plugins.scss'
+                }
+            }
+        },
         wiredep: {
             target: {
                 // Point to the files that should be updated when
@@ -51,8 +62,11 @@ module.exports = function (grunt) {
     //    grunt.registerTask('default', ['jshint', 'less', 'cssmin', 'jasmine']);
     //    grunt.registerTask('less-css', ['less', 'cssmin']);
     //    grunt.registerTask('test', ['qunit', 'jasmine']);
+
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-wiredep');
-    
+
     grunt.registerTask('default', ['grunt-wiredep']);
+    grunt.registerTask('sass', ['sass']);
 };

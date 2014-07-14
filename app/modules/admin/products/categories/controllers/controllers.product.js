@@ -1,4 +1,4 @@
-var app = angular.module('stipterApp.controllers.product', ['stipterApp.directive.product']);
+var app = angular.module('adminApp.controllers.product', ['adminApp.directive.product']);
 
 
 app.controller('CategoryCtrl', function ($scope, $location) {

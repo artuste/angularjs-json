@@ -2,7 +2,7 @@
  
 describe('Controller: ManuCtrl', function () {
  
-    beforeEach(module('stipterApp.controllers.home'));
+    beforeEach(module('adminApp.controllers.home'));
  
     var MenuCtrl,
         scopeMock,
@@ -25,7 +25,7 @@ describe('Controller: ManuCtrl', function () {
     }));
  
     it('should return "active" if current path is the same as menu item', function () {
-        locationMock.setPath('home');
-        expect(scopeMock.getPath('home')).toBe("active");
+        locationMock.setPath('categories');
+        expect(scopeMock.getPath('categories')).toBe("active");
     });
 });

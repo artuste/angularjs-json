@@ -1,4 +1,4 @@
-var app = angular.module('stipterApp.directive.product', []);
+var app = angular.module('adminApp.directive.product', []);
 
 
 app.directive("customSort", function() {
