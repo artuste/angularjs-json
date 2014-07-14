@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "id": 27,
-      "body": "ffly5ezh0k9"
-    },
-    {
       "id": 83,
       "body": "pvw9s27f1or"
     },
@@ -17,8 +13,48 @@
       "body": "vlir5a2x1or"
     },
     {
-      "id": 95,
-      "body": "3fm337syvi"
+      "id": 80,
+      "body": "pmxj2p7rpb9"
+    },
+    {
+      "id": 48,
+      "body": "tutj3fk1emi"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "user": [
+        {
+          "id": 123214,
+          "role": "admin"
+        }
+      ]
+    },
+    {
+      "username": "admin",
+      "password": "",
+      "id": 2
+    },
+    {
+      "username": "123214",
+      "password": "admin",
+      "id": 3
+    },
+    {
+      "username": "admin",
+      "password": "",
+      "id": 4
+    },
+    {
+      "username": "admin",
+      "password": "",
+      "id": 5
+    },
+    {
+      "username": "admin",
+      "password": "",
+      "id": 6
     }
   ],
   "favicon.ico": []

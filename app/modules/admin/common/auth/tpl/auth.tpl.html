@@ -1,0 +1,31 @@
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content-example-ui">
+            <h3 class="page-title">Authentication</h3>
+
+            <form name="loginForm" ng-controller="LoginController" ng-submit="login(credentials)" novalidate>
+                <label for="username">Username:</label>
+                <input type="text" id="username" ng-model="credentials.username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" ng-model="credentials.password">
+                <button type="submit">Login</button>
+            </form>
+
+            <div ng-controller="ApplicationController">
+                <h4>This is app content</h4>
+
+                <div ng-if="currentUser">Welcome, {{ currentUser.name }}</div>
+                <div ng-if="isAuthorized(userRoles.admin)">You're admin.</div>
+                <div ng-switch on="currentUser.role">
+                    <div ng-switch-when="userRoles.admin">You're admin.</div>
+                    <div ng-switch-when="userRoles.editor">You're editor.</div>
+                    <div ng-switch-default>You're something else.</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

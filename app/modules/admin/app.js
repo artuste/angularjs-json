@@ -19,6 +19,10 @@ var adminApp = angular.module('adminApp', [
     // REST
     'adminApp.services.rest',
     'adminApp.controllers.rest',
+    
+    // Authentication
+    'adminApp.controllers.auth',
+    'adminApp.services.auth',
 
     'ngRoute',
     'ngResource'
@@ -43,6 +47,9 @@ adminApp.config(function ($routeProvider) {
     .when('/rest', {
         templateUrl: adminAppPath + '/common/rest/tpl/rest.tpl.html',
         controller: 'PostAllDataCtrl'
+    })
+    .when('/auth', {
+        templateUrl: adminAppPath + '/common/auth/tpl/auth.tpl.html'
     })
     .otherwise({
         redirectTo: '/start'
