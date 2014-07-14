@@ -1,24 +1,38 @@
-var adminApp = angular.module('adminApp', [
-  'adminApp.controllers.home',
-  'adminApp.controllers.product',
-  'adminApp.directive.product',
-  'adminApp.factoryProduct',
+'use strict';
 
-  'ngRoute'
- ]), adminAppPath = 'app/modules/admin';
+var adminApp = angular.module('adminApp', [
+    // Home
+    'adminApp.controllers.home',
+    
+    // Products
+    'adminApp.controllers.product',
+    'adminApp.directive.product',
+    'adminApp.factoryProduct',
+    
+    // Filters
+    'adminApp.controllers.filters',
+    'adminApp.filters',
+
+    'ngRoute'
+ ]),
+    adminAppPath = 'app/modules/admin';
 
 
 adminApp.config(function ($routeProvider) {
-    $routeProvider.
-    when('/start', {
+    $routeProvider
+    .when('/start', {
         templateUrl: adminAppPath + '/home/tpl/home.tpl.html',
         controller: 'HomeCtrl'
-    }).
-    when('/categories', {
+    })
+    .when('/categories', {
         templateUrl: adminAppPath + '/products/categories/tpl/categories.tpl.html',
         controller: 'CategoryCtrl'
-    }).
-    otherwise({
+    })
+    .when('/filters', {
+        templateUrl: adminAppPath + '/common/filters/tpl/filters.tpl.html',
+        controller: 'FiltersCtrl'
+    })
+    .otherwise({
         redirectTo: '/start'
     });
 });

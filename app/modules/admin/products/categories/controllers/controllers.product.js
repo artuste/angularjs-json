@@ -7,7 +7,6 @@ app.controller('CategoryCtrl', function ($scope, $location) {
     };
 });
 
-
 app.controller('TestCtrl', function ($scope) {
     $scope.content = 'Some desc about this project ...';
 });
@@ -39,13 +38,6 @@ app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
             $scope.items[index].selected = true;
         }
     };
-//    $scope.selectItemAll = function () {
-//        var l = $scope.items.length;
-//        for (var i = 0; i < l; i++) {
-//            $scope.items[i].selected = true;
-//        }
-//debugger;
-//    };
 
     var searchMatch = function (haystack, needle) {
         if (!needle) {
