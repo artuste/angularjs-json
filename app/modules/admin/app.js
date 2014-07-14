@@ -12,8 +12,16 @@ var adminApp = angular.module('adminApp', [
     // Filters
     'adminApp.controllers.filters',
     'adminApp.filters',
+    
+    // Cookies
+    'adminApp.cookies',
+    
+    // REST
+    'adminApp.services.rest',
+    'adminApp.controllers.rest',
 
-    'ngRoute'
+    'ngRoute',
+    'ngResource'
  ]),
     adminAppPath = 'app/modules/admin';
 
@@ -31,6 +39,10 @@ adminApp.config(function ($routeProvider) {
     .when('/filters', {
         templateUrl: adminAppPath + '/common/filters/tpl/filters.tpl.html',
         controller: 'FiltersCtrl'
+    })
+    .when('/rest', {
+        templateUrl: adminAppPath + '/common/rest/tpl/rest.tpl.html',
+        controller: 'PostAllDataCtrl'
     })
     .otherwise({
         redirectTo: '/start'

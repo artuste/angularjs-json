@@ -1,0 +1,31 @@
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content-example-ui">
+            <h3 class="page-title">REST <small>$resource</small></h3>
+
+            <div>
+                <pre>{{ posts | json }}</pre>
+            </div>
+
+            <div ng-controller="PostShow">
+               <input type="text" ng-model="idPost" />
+                <button ng-click="show()">Show</button>
+                <div>
+                    <pre ng-show="post">{{ post | json }}</pre>
+                </div>
+                <hr />
+                <div>
+                     <button ng-click="add()">Add new item</button>
+                     <hr />
+                     <select ng-model="idRemove">
+                        <option></option>
+                        <option ng-repeat="post in posts">{{ post.id }}</option>
+                     </select>
+                     <button ng-click="remove()">Remove</button>
+                </div>
+            </div>           
+        </div>
+    </div>
+</div>

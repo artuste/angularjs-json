@@ -1,5 +1,4 @@
 <div class="page-container">
-    <!-- BEGIN SIDEBAR -->
     <div class="page-sidebar-wrapper">
     </div>
     <div class="page-content-wrapper">
@@ -7,13 +6,12 @@
             <h3 class="page-title">Filters <small>an example</small></h3>
 
             <div ng-controller="FiltersCtrl">
-              <h2>Default filters</h2>
-              <div>{{ '2013-03-11' | date }}</div>
-              
-              
-               <h2>Custom filters</h2>
+                <h4>i18n nl date</h4>
+                <div>{{ '2013-03-11' | date }}</div>
+
+                <h4>Custom filters</h4>
                 <ul>
-                    <li ng-repeat="value in values">{{value | myfilter:'date' }}</li>
+                    <li ng-repeat="value in values">{{ value | myfilter:'date' }}</li>
                 </ul>
                 <pre>{{ 'uppercase the text' | myfilter:'uppercase' }}</pre>
             </div>

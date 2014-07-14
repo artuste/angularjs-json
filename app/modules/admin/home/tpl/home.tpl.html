@@ -147,6 +147,22 @@
                 </div>
             </div>
             <!-- END PAGE HEADER-->
+            
+            
+            <!-- Cookie -->
+            
+            <div ng-controller="CookiesCtrl">
+                <h4>
+                    <p>Your cookie: 
+                        <b ng-show="cookie.active">{{ cookieName }}</b>
+                         <small ng-show="cookie.active" ng-click="removeCookie()">Destroy cookie</small>
+                        <small ng-show="!cookie.active" ng-click="setCookie()">Send cookie</small>
+                    </p>
+                   
+                </h4>
+            </div>
+            
+            
             <!-- BEGIN PAGE CONTENT-->
             <div class="row">
                 <div class="col-md-6">
