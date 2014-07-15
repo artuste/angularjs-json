@@ -1,17 +1,23 @@
 var services = angular.module('adminApp.services.auth', []);
 
-services.service('Session', function () {
-  this.create = function (sessionId, userId, userRole) {
-    this.id = sessionId;
-    this.userId = userId;
-    this.userRole = userRole;
-  };
-  this.destroy = function () {
-    this.id = null;
-    this.userId = null;
-    this.userRole = null;
-  };
-  return this;
+services.service('Session', function ($window) {
+    this.create = function (sessionId, userId, userRole) {
+        this.id = sessionId;
+        this.userId = userId;
+        this.userRole = userRole;
+    };
+    this.destroy = function () {
+        this.id = null;
+        this.userId = null;
+        this.userRole = null;
+    };
+    
+    this.addSession = function (res) {
+        $window.sessionStorage.authMyApp = res.data.token;
+        this.create(res.data.id, res.data.user[0].id, res.data.user[0].role);
+    };
+    
+    return this;
 });
 
 
@@ -20,11 +26,10 @@ services.factory('AuthService', function ($http, Session) {
 
     authService.login = function (credentials) {
         return $http
-            .post('http://localhost:3000/login', credentials)
-            .then(function (res) {
-                debugger;
-            
-                Session.create(res.id, res.user.id, res.user.role);
+            .get('http://localhost:3000/login/1')
+            .then(function (res) {            
+                Session.addSession(res);
+                
                 return res.user;
             });
     };
@@ -43,4 +48,3 @@ services.factory('AuthService', function ($http, Session) {
 
     return authService;
 });
-

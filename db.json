@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "id": 83,
-      "body": "pvw9s27f1or"
-    },
-    {
       "id": 79,
       "body": "e478g9icnmi"
     },
@@ -13,48 +9,35 @@
       "body": "vlir5a2x1or"
     },
     {
-      "id": 80,
-      "body": "pmxj2p7rpb9"
-    },
-    {
       "id": 48,
       "body": "tutj3fk1emi"
+    },
+    {
+      "id": 22,
+      "body": "rzi6aqt1emi"
     }
   ],
   "login": [
     {
       "id": 1,
+      "name": "Mick",
+      "token": "asdhuiouHIOsd89sudshds",
       "user": [
         {
-          "id": 123214,
+          "id": 101,
           "role": "admin"
         }
       ]
     },
     {
-      "username": "admin",
-      "password": "",
-      "id": 2
-    },
-    {
-      "username": "123214",
-      "password": "admin",
-      "id": 3
-    },
-    {
-      "username": "admin",
-      "password": "",
-      "id": 4
-    },
-    {
-      "username": "admin",
-      "password": "",
-      "id": 5
-    },
-    {
-      "username": "admin",
-      "password": "",
-      "id": 6
+      "id": 2,
+      "token": "213r23jkojkxxxsa",
+      "user": [
+        {
+          "id": 4,
+          "role": "editor"
+        }
+      ]
     }
   ],
   "favicon.ico": []
