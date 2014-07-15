@@ -5,6 +5,7 @@
         <div class="page-content-example-ui">
             <h3 class="page-title">Authentication</h3>
 
+           <div ng-if="!isAuthorizedSession">
             <form name="loginForm" ng-controller="LoginController" ng-submit="login(credentials)" novalidate>
                 <label for="username">Username:</label>
                 <input type="text" id="username" ng-model="credentials.username">
@@ -13,7 +14,8 @@
                 <button type="submit">Login</button>
             </form>
 
-            <div>
+            </div>
+           <div ng-if="isAuthorizedSession">
                 <div ng-if="currentUser">Welcome, {{ currentUser.name }}</div>
                 <div ng-if="isAuthorized(userRoles.admin)">You're admin.</div>
             </div>

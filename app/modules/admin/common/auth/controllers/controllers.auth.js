@@ -21,7 +21,9 @@ app.constant('USER_ROLES', {
 
 
 app.controller('ApplicationController', function ($scope, $window, USER_ROLES, AuthService) {
-    $scope.currentUser = null;
+    $scope.currentUser = {
+        name: 'User'
+    };
     $scope.userRoles = USER_ROLES;
     $scope.isAuthorized = AuthService.isAuthorized;
     $scope.isAuthorizedSession = $window.sessionStorage.authMyApp ? true : false;
