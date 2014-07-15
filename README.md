@@ -1,6 +1,15 @@
 <h1>Metronic + AngularJS + Bootstrap</h1>
 
-<p>This is an example of usage.</p>
+<p>In command-line go to the project folder</p>
+
+<h2>Install npm</h2>
+<pre>npm install</pre>
+
+<h2>Install bower</h2>
+<pre>bower install</pre>
+
+<h2>Grunt wiredep plugin</h2>
+<pre>grunt wiredep</pre>
 
 <h2>Installation of JSON Server</h2>
 
