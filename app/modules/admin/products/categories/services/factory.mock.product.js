@@ -1,6 +1,6 @@
 var services = angular.module('adminApp.factoryProduct', []);
 
-app.service('ProductCategoryTable', function () {
+app.service('ProductCategoryTable', function ($resource) {
     this.all = function () {
         return [
               {

@@ -1,19 +1,43 @@
 var app = angular.module('adminApp.controllers.product', ['adminApp.directive.product']);
 
 
-app.controller('CategoryCtrl', function ($scope, $location) {
+app.controller('CategoryCtrl', function ($scope, $rootScope, $location) {
     $scope.category = {
         name: 'new category'
     };
 
 });
 
+app.controller('NewCategoryCtrl', function ($scope, $rootScope) {
+    $scope.addNewCategory = function (formData) {
+        var newItem = {
+            id: 100,
+            name: formData.name,
+            selected: false,
+            status: formData.desc,
+            type: formData.type
+        };
+        console.log('formdata', formData);
+
+//        $scope.items.push(newItem);
+
+        $rootScope.$broadcast('item', newItem);
+
+//        console.log('scope.items', $scope.items);
+    };
+});
+
+app.controller('EditCategoryCtrl', function ($scope) {
+    $scope.edit = '21szczx';
+});
+
+
 app.controller('TestCtrl', function ($scope) {
     $scope.content = 'Some desc about this project ...';
 });
 
 
-app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
+app.controller('ctrlRead', function ($scope, $rootScope, $filter, ProductCategoryTable) {
 
     // init
     $scope.sort = {
@@ -28,7 +52,11 @@ app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
     $scope.itemsPerPage = 5;
     $scope.pagedItems = [];
     $scope.currentPage = 0;
+
     $scope.items = ProductCategoryTable.all();
+
+
+
 
     $scope.selectItem = function (index) {
         var itemChecked = $scope.items[index].selected;
@@ -47,8 +75,21 @@ app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
         return haystack.toLowerCase().indexOf(needle.toLowerCase()) !== -1;
     };
 
+
+    $scope.deleteCategory = function () {
+        $scope.items.splice(1,1);
+        debugger;
+    };
+
+
+
+
+
     // init the filtered items
     $scope.search = function () {
+
+        $rootScope.$on('item', function(event, mass) { console.log(mass) });
+
         $scope.filteredItems = $filter('filter')($scope.items, function (item) {
             for (var attr in item) {
                 if (searchMatch(item[attr], $scope.query))
@@ -112,7 +153,6 @@ app.controller('ctrlRead', function ($scope, $filter, ProductCategoryTable) {
 
     // functions have been describe process the data for display
     $scope.search();
-
 
 
 });

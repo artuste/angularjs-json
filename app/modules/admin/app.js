@@ -38,7 +38,15 @@ adminApp.config(function ($routeProvider) {
     })
     .when('/categories', {
         templateUrl: adminAppPath + '/products/categories/tpl/categories.tpl.html',
-        controller: 'CategoryCtrl'
+        controller: 'ctrlRead'
+    })
+    .when('/categories/new', {
+        templateUrl: adminAppPath + '/products/categories/tpl/new.tpl.html',
+        controller: 'NewCategoryCtrl'
+    })
+    .when('/categories/edit', {
+        templateUrl: adminAppPath + '/products/categories/tpl/edit.tpl.html',
+        controller: 'EditCategoryCtrl'
     })
     .when('/filters', {
         templateUrl: adminAppPath + '/common/filters/tpl/filters.tpl.html',

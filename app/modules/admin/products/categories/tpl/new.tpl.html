@@ -1,0 +1,102 @@
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content-example-ui">
+            <h3 class="page-title">New category</h3>
+
+            <ul class="page-breadcrumb breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="#/dashboard">App</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#/categories">Categories</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#/categories">New category</a>
+                    <i class="fa"></i>
+                </li>
+            </ul>
+
+            <div class="row-fluid">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Filter</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <select id="SelectItem" class="form-control input-sm">
+                                    <option>example 1</option>
+                                    <option>example 2</option>
+                                    <option>example 3</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-xs pull-right">Filter</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+        <!--<pre>{{ items|json }}</pre>-->
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">New category</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form ng-submit="addNewCategory(form)">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td>Name</td>
+                                    <td><input ng-model="form.name" type="text" style="width: 100%" /></td>
+                                    <td style="text-align: center"><span class="glyphicon glyphicon-info-sign"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Facility type</td>
+                                    <td>
+                                        <select ng-model="form.type" style="width: 100%">
+                                            <option>Active</option>
+                                            <option>Inactive</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </td>
+                                    <td style="text-align: center"><span class="glyphicon glyphicon-info-sign"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td><textarea ng-model="form.desc" rows="10" style="width: 100%"></textarea></td>
+                                    <td style="text-align: center"><span class="glyphicon glyphicon-info-sign"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Internal description</td>
+                                    <td><textarea ng-model="form.desc2" rows="10" style="width: 100%"></textarea></td>
+                                    <td style="text-align: center"><span class="glyphicon glyphicon-info-sign"></span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="btn-group btn-group-xs" role="toolbar">
+                                            <div class="btn-group">
+                                                <button type="submit" class="btn btn-warning btn-xs" style="margin-right: 10px;">
+                                                    <span class="glyphicon glyphicon-ok"></span> Add
+                                                </button>
+
+                                                <a href="#/categories" class="btn btn-danger btn-xs">
+                                                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

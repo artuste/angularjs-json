@@ -13,7 +13,10 @@ services.service('Session', function ($window) {
     };
     
     this.addSession = function (res) {
+        // Session storage
         $window.sessionStorage.authMyApp = res.data.token;
+
+        // Simple session
         this.create(res.data.id, res.data.user[0].id, res.data.user[0].role);
     };
     
