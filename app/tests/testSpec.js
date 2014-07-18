@@ -5,7 +5,7 @@ describe('Controller: TestCtrl', function () {
  
     var TestCtrl,
         scope;
- 
+
     beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
         TestCtrl = $controller('TestCtrl', {
