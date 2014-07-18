@@ -66,6 +66,14 @@ module.exports = function (grunt) {
             }
         },
         watch: {
+            less: {
+                files: ['app/css/*.less'],
+                tasks: ['less']
+            },
+            cssmin: {
+                files: ['app/css/*.css'],
+                tasks: ['cssmin']
+            },
             scripts: {
                 files: ['app/metronic/*.js'],
                 tasks: ['jshint']
