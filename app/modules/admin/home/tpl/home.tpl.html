@@ -1,13 +1,14 @@
 <div class="page-container">
 
-<select ng-model="test">
-    <option></option>
-    <option value="true">test</option>
-</select>
+<!--<select ng-model="test">-->
+    <!--<option></option>-->
+    <!--<option value="true">test</option>-->
+<!--</select>-->
 
-<div ng-show="test">Ok!</div>
+<!--<div ng-show="test">Ok!</div>-->
 
-<h2>{{ 'HEADLINE' | translate }}</h2>
+<h3 class="page-title">Translations</h3>
+<h4>{{ 'HEADLINE' | translate }}</h4>
 <p>{{ 'INTRO_TEXT' | translate }}</p>
 
 <button ng-click="changeLanguage('de')" translate="BUTTON_TEXT_DE"></button>

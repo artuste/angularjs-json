@@ -15,5 +15,6 @@ app.config(function ($translateProvider) {
             BUTTON_TEXT_EN: 'englisch',
             BUTTON_TEXT_DE: 'deutsch'
         });
+
     $translateProvider.preferredLanguage('en');
 });
