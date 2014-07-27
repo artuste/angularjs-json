@@ -24,8 +24,12 @@ var adminApp = angular.module('adminApp', [
     'adminApp.controllers.auth',
     'adminApp.services.auth',
 
+    // Translation
+    'adminApp.services.translate',
+
     'ngRoute',
-    'ngResource'
+    'ngResource',
+    'pascalprecht.translate'
  ]),
     adminAppPath = 'app/modules/admin';
 

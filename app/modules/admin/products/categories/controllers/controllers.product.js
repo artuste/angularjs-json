@@ -18,7 +18,6 @@ app.controller('NewCategoryCtrl', function ($scope, $rootScope) {
             type: formData.type
         };
         console.log('formdata', formData);
-
 //        $scope.items.push(newItem);
 
         $rootScope.$broadcast('item', newItem);
@@ -54,8 +53,6 @@ app.controller('ctrlRead', function ($scope, $rootScope, $filter, ProductCategor
     $scope.currentPage = 0;
 
     $scope.items = ProductCategoryTable.all();
-
-
 
 
     $scope.selectItem = function (index) {

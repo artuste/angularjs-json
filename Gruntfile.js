@@ -13,7 +13,7 @@ module.exports = function (grunt) {
             continuous: {
                 configFile: 'karma.conf.js',
                 singleRun: true,
-                browsers: ['PhantomJS'] //'Chrome', 'Firefox'
+                browsers: ['Chrome', 'Firefox'] //'Chrome', 'Firefox'
             }
         },
         wiredep: {
@@ -107,9 +107,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-htmlhint');
 
-
-    //    // My tasks
-    grunt.registerTask('default', ['jshint', 'htmlhint']);
+    // My tasks
+    grunt.registerTask('hints', ['jshint', 'htmlhint']);
     grunt.registerTask('less-css', ['less', 'cssmin']);
 
     grunt.registerTask('default', ['watch']);

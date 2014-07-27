@@ -34,13 +34,16 @@
     "angular-ui-router": "~0.2.10",
     "bootstrap-switch": "~3.0.2",
     "jquery-ui": "~1.11.0",
-    "angular-cookies": "~1.2.20"
+    "angular-cookies": "~1.2.20",
+    "angular-translate-loader-url": "~2.2.0",
+    "angular-translate-loader-static-files": "~2.2.0"
   },
   "devDependencies": {
     "angular": "~1.2.19",
     "jquery": "~2.1.1",
     "angular-mocks": "~1.2.19",
     "angular-route": "~1.2.19",
-    "angular-resource": "~1.2.19"
+    "angular-resource": "~1.2.19",
+    "angular-translate": "~2.2.0"
   }
 }
