@@ -1,4 +1,4 @@
-<h1>Metronic + AngularJS + Bootstrap</h1>
+<h1>AngularJS Application</h1>
 
 <p>In command-line go to the project folder</p>
 
