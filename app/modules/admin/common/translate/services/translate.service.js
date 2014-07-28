@@ -12,6 +12,8 @@ app.config(function ($translateProvider) {
         .preferredLanguage('en');
 });
 
+
+//
 // Simple translations
 //app.config(function ($translateProvider) {
 //    $translateProvider
