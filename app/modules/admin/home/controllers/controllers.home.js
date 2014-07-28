@@ -10,7 +10,6 @@ var app = angular.module('adminApp.controllers.home', []);
         $scope.changeLanguage = function (langKey) {
             $translate.use(langKey);
         };
-
 	});
 
 	app.controller('MenuCtrl', function ($scope, $location) {
