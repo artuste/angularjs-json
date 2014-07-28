@@ -1,0 +1,13 @@
+<div class="page-container">
+    <h3 class="page-title">
+        Translate
+        <small>angular-translate</small>
+    </h3>
+
+        <h4>{{ 'HEADLINE' | translate }}</h4>
+
+        <p>{{ 'INTRO_TEXT' | translate }}</p>
+
+        <button ng-click="changeLanguage('de')" translate="BUTTON_TEXT_DE"></button>
+        <button ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN"></button>
+</div>

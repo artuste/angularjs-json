@@ -7,13 +7,6 @@
 
 <!--<div ng-show="test">Ok!</div>-->
 
-<h3 class="page-title">Translations</h3>
-<h4>{{ 'HEADLINE' | translate }}</h4>
-<p>{{ 'INTRO_TEXT' | translate }}</p>
-
-<button ng-click="changeLanguage('de')" translate="BUTTON_TEXT_DE"></button>
-<button ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN"></button>
-
     <!-- BEGIN SIDEBAR -->
     <div class="page-sidebar-wrapper">
         <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
@@ -117,22 +110,7 @@
             <!-- BEGIN PAGE HEADER-->
             <div class="row">
                 <div class="col-md-12">
-                   <!-- Cookie -->
-            
-            <div ng-controller="CookiesCtrl">
-               <h3 class="page-title">
-					Cookies <small>$cookieStore</small>
-					</h3>
-                <h4>
-                    <p>Your cookie: 
-                        <b ng-show="cookie.active">{{ cookieName }}</b>
-                         <small ng-show="cookie.active" ng-click="removeCookie()">Destroy cookie</small>
-                        <small ng-show="!cookie.active" ng-click="setCookie()">Send cookie</small>
-                    </p>
-                   
-                </h4>
-            </div>
-                  <hr />
+
                    
                     <!-- BEGIN PAGE TITLE & BREADCRUMB-->
                     <h3 class="page-title">
