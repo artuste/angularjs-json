@@ -2,7 +2,7 @@
 
 var app = angular.module('adminApp.services.translate', ['pascalprecht.translate']);
 
-// Static translations
+//Static translations
 app.config(function ($translateProvider) {
     $translateProvider
         .useStaticFilesLoader({
@@ -13,8 +13,7 @@ app.config(function ($translateProvider) {
 });
 
 
-//
-// Simple translations
+//Simple translations
 //app.config(function ($translateProvider) {
 //    $translateProvider
 //        .translations('en', {

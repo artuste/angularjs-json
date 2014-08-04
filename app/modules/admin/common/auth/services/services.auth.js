@@ -6,6 +6,7 @@ services.service('Session', function ($window) {
         this.userId = userId;
         this.userRole = userRole;
     };
+
     this.destroy = function () {
         this.id = null;
         this.userId = null;
@@ -14,7 +15,8 @@ services.service('Session', function ($window) {
     
     this.addSession = function (res) {
         // Session storage
-        $window.sessionStorage.authMyApp = res.data.token;
+        var session = $window.sessionStorage;
+        session.authMyApp = res.data.token;
 
         // Simple session
         this.create(res.data.id, res.data.user[0].id, res.data.user[0].role);

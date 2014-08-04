@@ -28,51 +28,138 @@ var adminApp = angular.module('adminApp', [
         'adminApp.services.translate',
         'adminApp.controllers.translations',
 
-        'ngRoute',
+        'ui.router.state',
+        'ui.bootstrap',
+//        'ngRoute',
         'ngResource',
-        'pascalprecht.translate'
+        'pascalprecht.translate',
+        'ncy-angular-breadcrumb'
     ]),
     adminAppPath = 'app/modules/admin';
 
 
-adminApp.config(function ($routeProvider) {
-    $routeProvider
-        .when('/start', {
+adminApp.config(function ($stateProvider, $urlRouterProvider) {
+
+    // For any unmatched url, redirect to /state1
+    $urlRouterProvider.otherwise("/start");
+    //
+    // Now set up the states
+    $stateProvider
+        .state('start', {
+            url: '/start',
             templateUrl: adminAppPath + '/home/tpl/home.tpl.html',
-            controller: 'HomeCtrl'
+            controller: 'HomeCtrl',
+            data: {
+                ncyBreadcrumbLabel: 'Home page'
+            }
         })
-        .when('/categories', {
+        .state('categories', {
+            url: '/categories',
             templateUrl: adminAppPath + '/products/categories/tpl/categories.tpl.html',
-            controller: 'ctrlRead'
+            controller: 'ctrlRead',
+            data: {
+                ncyBreadcrumbLabel: 'Categories'
+            }
         })
-        .when('/categories/new', {
+        .state('categories/new', {
+            url: '/categories/new',
             templateUrl: adminAppPath + '/products/categories/tpl/new.tpl.html',
-            controller: 'NewCategoryCtrl'
+            controller: 'NewCategoryCtrl',
+            data: {
+                ncyBreadcrumbParent: 'categories',
+                ncyBreadcrumbLabel: 'New'
+            }
         })
-        .when('/categories/edit', {
+        .state('categories/edit', {
+            url: '/categories/edit',
             templateUrl: adminAppPath + '/products/categories/tpl/edit.tpl.html',
-            controller: 'EditCategoryCtrl'
+            controller: 'EditCategoryCtrl',
+            data: {
+                ncyBreadcrumbParent: 'categories',
+                ncyBreadcrumbLabel: 'Edit'
+            }
         })
-        .when('/filters', {
+        .state('filters', {
+            url: '/filters',
             templateUrl: adminAppPath + '/common/filters/tpl/filters.tpl.html',
-            controller: 'FiltersCtrl'
+            controller: 'FiltersCtrl',
+            data: {
+                ncyBreadcrumbLabel: 'Filters'
+            }
         })
-        .when('/rest', {
+        .state('rest', {
+            url: '/rest',
             templateUrl: adminAppPath + '/common/rest/tpl/rest.tpl.html',
-            controller: 'PostAllDataCtrl'
+            controller: 'PostAllDataCtrl',
+            data: {
+                ncyBreadcrumbLabel: 'Rest'
+            }
         })
-        .when('/auth', {
-            templateUrl: adminAppPath + '/common/auth/tpl/auth.tpl.html'
+        .state('auth', {
+            url: '/auth',
+            templateUrl: adminAppPath + '/common/auth/tpl/auth.tpl.html',
+            data: {
+                ncyBreadcrumbLabel: 'Authorization'
+            }
         })
-        .when('/translations', {
+        .state('translations', {
+            url: '/translations',
             templateUrl: adminAppPath + '/common/translate/tpl/translations.tpl.html',
-            controller: 'TranslationsCtrl'
+            controller: 'TranslationsCtrl',
+            data: {
+                ncyBreadcrumbLabel: 'Translations'
+            }
         })
-        .when('/cookies', {
+        .state('cookies', {
+            url: '/cookies',
             templateUrl: adminAppPath + '/common/cookies/tpl/cookies.tpl.html',
-            controller: 'CookiesCtrl'
-        })
-        .otherwise({
-            redirectTo: '/start'
+            controller: 'CookiesCtrl',
+            data: {
+                ncyBreadcrumbLabel: 'Cookies'
+            }
         });
 });
+
+
+// For ngRoute (ng-view)
+//adminApp.config(function ($routeProvider) {
+//    $routeProvider
+//        .when('/start', {
+//            templateUrl: adminAppPath + '/home/tpl/home.tpl.html',
+//            controller: 'HomeCtrl'
+//        })
+//        .when('/categories', {
+//            templateUrl: adminAppPath + '/products/categories/tpl/categories.tpl.html',
+//            controller: 'ctrlRead'
+//        })
+//        .when('/categories/new', {
+//            templateUrl: adminAppPath + '/products/categories/tpl/new.tpl.html',
+//            controller: 'NewCategoryCtrl'
+//        })
+//        .when('/categories/edit', {
+//            templateUrl: adminAppPath + '/products/categories/tpl/edit.tpl.html',
+//            controller: 'EditCategoryCtrl'
+//        })
+//        .when('/filters', {
+//            templateUrl: adminAppPath + '/common/filters/tpl/filters.tpl.html',
+//            controller: 'FiltersCtrl'
+//        })
+//        .when('/rest', {
+//            templateUrl: adminAppPath + '/common/rest/tpl/rest.tpl.html',
+//            controller: 'PostAllDataCtrl'
+//        })
+//        .when('/auth', {
+//            templateUrl: adminAppPath + '/common/auth/tpl/auth.tpl.html'
+//        })
+//        .when('/translations', {
+//            templateUrl: adminAppPath + '/common/translate/tpl/translations.tpl.html',
+//            controller: 'TranslationsCtrl'
+//        })
+//        .when('/cookies', {
+//            templateUrl: adminAppPath + '/common/cookies/tpl/cookies.tpl.html',
+//            controller: 'CookiesCtrl'
+//        })
+//        .otherwise({
+//            redirectTo: '/start'
+//        });
+//});

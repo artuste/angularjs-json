@@ -38,6 +38,7 @@
 
 <body ng-controller="ApplicationController">
     <div id="main">
+
         <div id="header">
             <span class="logo"><span class="glyphicon glyphicon-user"></span> Stipter Admin</span>
         </div>
@@ -46,7 +47,9 @@
 
         <div id="center">
             <div class="container">
-                <section ng-view></section>
+
+
+                <section ui-view></section> <!-- ng-view for ngRoute -->
             </div>
         </div>
     </div>
@@ -66,6 +69,8 @@
     <script src="bower_components/angular-translate/angular-translate.js"></script>
     <script src="bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
     <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     
     <!-- i18n -->
