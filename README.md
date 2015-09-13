@@ -1,5 +1,5 @@
 # AngularJS Client Side Application
-In command-line go to the project folder
+This is another AngularJS Application with some cool features :)
 
 ## Running the application
 <pre>npm install</pre>
